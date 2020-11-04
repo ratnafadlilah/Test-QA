@@ -42,13 +42,13 @@ class Employee {
 }
 
 $name = new Company();
-$setCompanyName = $name->setCompanyName("DOT");
-$getCompanyName = $name->getCompanyName();
+$setCompanyName = $company->setCompanyName("DOT");
+$getCompanyName = $company->getCompanyName();
 echo $getCompanyName;
 
 $name = new Department();
-$setDepartmentName = $name->setDepartmentName("QA Engineer");
-$getDepartmentName = $name->getDepartmentName();
+$setDepartmentName = $department->setDepartmentName("QA Engineer");
+$getDepartmentName = $department->getDepartmentName();
 echo $getDepartmentName;
 
 $name = new Employee();
