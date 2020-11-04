@@ -34,7 +34,7 @@ class Employee {
         return $this->title;
     }
     function getEmployeeProfile(){
-        return $this->name;
+        return array($name, $title);
     }
     function getEmployeeMonthlySalary(){
         return $this->salary;
