@@ -34,7 +34,7 @@ class Employee {
         return $this->title;
     }
     function getEmployeeProfile(){
-        return array($name, $title);
+        return array($this->name, $this->title);
     }
     function getEmployeeMonthlySalary(){
         return $this->salary;
@@ -47,18 +47,17 @@ $getCompanyName = $name->getCompanyName();
 echo $getCompanyName;
 
 $name = new Department();
-$setDepartmentName = $name->setDepartmentName("Development");
+$setDepartmentName = $name->setDepartmentName("QA Engineer");
 $getDepartmentName = $name->getDepartmentName();
 echo $getDepartmentName;
 
 $name = new Employee();
-$setEmployeeName = $name->setEmployeeName("DOT");
-$getEmployeeTitle = $title->getEmployeeTitle();
-$getEmployeeProfile = $name->getEmployeeProfile();
-$getEmployeeMonthlySalary = $salary->getEmployeeMonthlySalary();
-echo $getEmployeeName;
+$setEmployeeName = $employee->setEmployeeName("Siti Ratna Fadlilatussa'adah");
+$getEmployeeTitle = $employee->getEmployeeTitle();
+$getEmployeeProfile = $employee->getEmployeeProfile();
+$getEmployeeMonthlySalary = $employee->getEmployeeMonthlySalary();
 echo $getEmployeeTitle;
-echo $getEmployeeProfile;
+echo $getEmployeeProfile[0]."".$getEmployeeProfile[1];
 echo $getEmployeeMonthlySalary;
 
 ?>
